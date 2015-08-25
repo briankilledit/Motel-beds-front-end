@@ -1,0 +1,233 @@
+// ======================================= 
+//
+// 			Navigation Styles
+//
+// =======================================
+
+nav.container {
+
+	&.desktop {
+		display: block;
+		padding: 0;
+		float: none;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-color: transparent;
+		z-index: 99999;
+		text-align: center;
+		background-image: url("../img/navBg.png");
+		background-repeat: repeat-x;
+		@include smoothie(0.22s);
+
+		@media screen and (max-width: $tablet){
+			background-size: auto 140%;
+		}
+
+		@media screen and (max-width: $tablet-small){
+			display: none;
+		}
+
+		.wrap {
+			max-width: 100%;
+
+			.navItem {
+				font-family: "Ed 3";
+				display: inline-block;
+				text-transform: uppercase;
+				text-decoration: none;
+				font-size: 16px;
+				color: #ffffff;
+				text-shadow: 1px 1px 0 #000000;
+				letter-spacing: 0.06em;
+				cursor: pointer;
+				opacity: 0.7;
+				vertical-align: top;
+				@include smoothie(0.22s);
+
+				&:hover {
+					opacity: 1;
+				}
+
+				&.tour,
+				&.music {
+					margin: 40px 75px 0 0;
+
+					@media screen and (max-width: $tablet){
+						margin: 35px 45px 0 0; 
+					}
+				}
+
+				&.news,
+				&.contact {
+					margin: 40px 0 0 75px;
+
+					@media screen and (max-width: $tablet){
+						margin: 35px 0 0 45px;
+					}
+				}
+			}
+
+			.navLogo {
+
+				& img {
+					display: inline-block;
+					width: 100px;
+					height: auto;
+					vertical-align: top;
+					margin-top: 10px;
+					@include smoothie(.22s);
+
+					@media screen and (max-width: $tablet){
+						width: 70px; 
+					}
+				}
+			}
+
+			.mobileLogo {
+				display: none;
+			}
+		}
+
+		&.scrollingNav {
+			background-color: #202020;
+			height: 60px;
+			box-shadow: 0px 0px 13px -3px #000000;
+			@include bgBlack;
+
+			& .wrap {
+				& .navItem {
+					&.tour,
+					&.music,
+					&.news,
+					&.contact {
+						margin-top: 22px;
+					}
+				}
+				.navLogo {
+					& img {
+						width: 40px;
+					}
+				}
+			}
+		}
+	}
+
+	&.mobile {
+		display: none;
+		width: 100%;
+		float: left;
+		padding: 0;
+		background-color: #000000;
+		position: fixed;
+		z-index: 99999;
+		@include bgBlack;
+
+		@media screen and (max-height: 265px){
+			position: relative;
+			margin-bottom: -65px;
+		}
+
+		@media screen and (max-width: $tablet-small){
+			display: block;
+		}
+
+		& .left {
+			float: left;
+			width: 50%;
+
+			& .mobileLogo {
+				float: left;
+
+				& img {
+					float: left;
+					width: 40px;
+					height: auto;
+					margin: 9px 10px 6px;
+				}
+			}
+		}
+
+		& .right {
+			float: left;
+			width: 50%;
+
+			& .hamburger {
+				cursor: pointer;
+				width: 30px;
+				float: right;
+				padding: 24px 15px;
+
+				& span {
+					float: right;
+					width: 100%;
+					height: 1px;
+					margin-bottom: 5px;
+					background-color: #ffffff;
+
+					&:last-child{
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+
+		& .mainNav {
+			display: none;
+			float: left;
+			width: 100%;
+
+			& ul {
+				border-top: 1px solid #363636;
+				float: left;
+				width: 100%;
+
+				& li {
+					float: left;
+					width: 100%;
+					border-bottom: 1px solid #363636;
+
+					& a {
+						width: 100%;
+						float: left;
+						padding: 12px 0;
+						text-align: center;
+
+						font-family: "Ed 3";
+						text-transform: uppercase;
+						text-decoration: none;
+						font-size: 16px;
+						color: #ffffff;
+						text-shadow: 1px 1px 0 #000000;
+						letter-spacing: 0.06em;
+						cursor: pointer;
+						opacity: 0.7;
+						@include smoothie(0.22s);
+
+						&:hover {
+							opacity: 1;
+							@include noSmoothie;
+						}
+
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

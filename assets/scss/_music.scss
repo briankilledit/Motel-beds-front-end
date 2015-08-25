@@ -1,0 +1,216 @@
+// ======================================= 
+//
+// 			Music Section Styles
+//
+// =======================================
+
+.container#music {
+	@include bgBlue;
+
+	& .wrap {
+
+		& h1 {
+			color: #ffffff;
+			margin-bottom: 0;
+			line-height: 1em;
+		}
+
+		& .subHead {
+			width: 100%;
+			color: #ffffff;
+			text-align: center;
+			margin-bottom: 20px;
+			opacity: 0.7;
+			font-style: italic;
+			font-size: 18px;
+		}
+
+		& .album {
+			width: 20%;
+			margin-right: -5px;
+			margin-bottom: -6px;
+			display: inline-block;
+			overflow: hidden;
+			text-align: center;
+			height: 195px;
+
+			@media screen and (max-width: $desktop){
+				width: 25%;
+			}
+
+			// @media screen and (max-width: $tablet){
+			// 	width: 33.3333%;
+			// 	height: 150px;
+			// }
+
+			@media screen and (max-width: $tablet){
+				width: 45%;
+				margin-right: 2.5%;
+				margin-bottom: 10px;
+
+				&:nth-child(n+2){
+					margin-right: 0;
+					margin-left: 2.5%;
+				}
+			}
+
+			@media screen and (max-width: $phone){
+				height: 140px;
+			}
+
+			& .cover {
+				height: 100%;
+				width: 100%;
+				text-align: center;
+				cursor: pointer;
+				background-size: auto 102%;
+				background-repeat: no-repeat;
+				background-position: center;
+				@include smoothie(0.16s);
+
+				& img {
+					display: none;
+				}
+
+				& .albumName {
+					opacity: 0;
+					background-color: rgba(0, 0, 0, 0.85);
+					height: 100%;
+					width: 100%;
+					display: table-cell;
+					float: left;
+					text-align: center;
+					box-sizing: border-box;
+					border: 20px #000000 solid;
+					@include smoothie(0.16s);
+					
+					& span {
+						color: #ffffff;
+						width: 90%;
+						padding: 0 5%;
+						float: left;
+						@include middleThisBitch;
+					}
+				}
+
+				&:hover {
+					background-size: auto 118%;
+
+					& .albumName {
+						opacity: 1;
+						@include noSmoothie;
+					}
+				}
+			}
+
+			& .tracks {
+				display: none;
+			}
+		}
+	}
+}
+
+
+
+
+
+.blackOut .popWrap .album {
+
+	@media screen and (max-width: $tablet-small){
+		// display: none;
+	}
+
+	& .cover {
+		background-size: 100% auto;
+		background-color: transparent;
+		background-repeat: no-repeat;
+		background-position: top left;
+		width: 40%;
+		margin-right: 5%;
+		display: inline-block;
+		vertical-align: top;
+		height: 100%;
+
+		@media screen and (max-width: $tablet-small){
+			display: block;
+			width: 60%;
+			max-width: 230px;
+			margin: 20px auto 15px;
+		}
+
+		& .albumName {
+			display: none;
+		}
+
+		& img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	& .tracks {
+		width: 45%;
+		display: inline-block;
+		vertical-align: top;
+		height: 100%;
+		margin-left: -5px;
+
+		@media screen and (max-width: $tablet-small){
+			width: 94%;
+			padding: 0 3% 25px;
+			text-align: center;
+		}
+
+		& h3 {
+			font-family: "Ed 3";
+			font-size: 18px;
+			text-transform: uppercase;
+			width: 100%;
+			padding-bottom: 3px;
+
+			@media screen and (max-width: $tablet-small){
+				padding-top: 14px;
+			}
+		}
+
+		& a.itunesLink {
+			width: 100%;
+			color: $blue;
+			font-size: 14px;
+			font-style: bold;
+			margin-top: 5px;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
+
+			@media screen and (max-width: $tablet-small){
+				font-size: 16px;
+			}
+		}
+
+		& ol {
+			width: 100%;
+			padding:7px 0 0 25px;
+			box-sizing: border-box;
+
+			& li {
+				width: 100%;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

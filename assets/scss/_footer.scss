@@ -1,0 +1,158 @@
+// ======================================= 
+//
+// 			    Footer Styles
+//
+// =======================================
+
+.container#footer {
+	background-image: url("../img/concreteSeeThru.png");
+	background-repeat: repeat;
+	background-position: top left;
+	background-color: #000000;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-top: 1px #3d3d3d solid;
+	@include smoothie(0.2s);
+
+	@media screen and (max-width: $tablet){
+		padding-bottom: 20px;
+	}
+
+	&:hover {
+		background-color: #0a0a0a;
+	}
+
+	&.facebookHover { background-color: $facebook; }
+	&.twitterHover { background-color: $twitter; }
+	&.tumblrHover { background-color: $tumblr; }
+	&.instagramHover { background-color: $instagram; }
+
+	&.facebookHover .wrap .left p,
+	&.facebookHover .wrap .left p a,
+	&.twitterHover .wrap .left p,
+	&.twitterHover .wrap .left p a,
+	&.tumblrHover .wrap .left p,
+	&.tumblrHover .wrap .left p a,
+	&.instagramHover .wrap .left p,
+	&.instagramHover .wrap .left p a {
+		color: #ffffff;
+	}
+
+	& .wrap {
+
+		& .left {
+			float: left;
+			width: 50%;
+
+			@media screen and (max-width: $tablet){
+				width: 100%;
+			}
+
+			& p {
+				float: left;
+				color: #aeaeae;
+				font-size: 12px;
+				padding: 8px 0;
+				@include smoothie(0.2s);
+
+				@media screen and (max-width: $tablet){
+					text-align: center;
+					width: 100%;
+				}
+
+				& a {
+					color: #aeaeae;
+					text-decoration: none;
+					@include smoothie(0.18s);
+
+					&:hover {
+						color: #ffffff;
+						text-decoration: underline;
+					}
+				}
+			}
+
+		}
+
+		& .right {
+			float: right;
+			width: 50%;
+
+			@media screen and (max-width: $tablet){
+				width: 100%;
+			}
+
+			& .socMed {
+				float: right;
+
+				@media screen and (max-width: $tablet){
+					float: none;
+					width: 100%;
+					text-align: center;
+					margin-bottom: 15px;
+				}
+
+				& a {
+					float: left;
+					color: tranparent;
+					text-indent: -99999px;
+					width: 30px;
+					height: 30px;
+					border-radius: 50%;
+					margin-left: 10px;
+					background-color: transparent;
+					background-repeat: no-repeat;
+					background-position: center center;
+					opacity: 0.8;
+					vertical-align: top;
+					box-shadow: 1px 1px 4px transparent;
+					// border: 1px #ffffff solid;
+					@include smoothie(0.2s);
+
+					@media screen and (max-width: $tablet){
+						float: none;
+						display: inline-block;
+					}
+
+					&:first-child {
+						margin-left: 0;
+					}
+
+					&.facebook {
+						background-color: $facebook;
+						background-image: url("../img/socMed_facebook.png");
+						background-size: auto 60%;
+					}
+
+					&.twitter {
+						background-color: $twitter;
+						background-image: url("../img/socMed_twitter.png");
+						background-size: 60% auto;
+					}
+
+					&.tumblr {
+						background-color: $tumblr;
+						background-image: url("../img/socMed_tumblr.png");
+						background-size: auto 60%;
+					}
+
+					&.instagram {
+						background-color: $instagram;
+						background-image: url("../img/socMed_instagram.png");
+						background-size: 60% auto;
+					}
+				}
+
+				&:hover a {
+					background-color: none;
+					opacity: 0.4;
+
+					&:hover{
+						opacity: 1;
+						box-shadow: 1px 1px 3px #000000; 
+					}
+				}
+			}
+		}
+	}
+}

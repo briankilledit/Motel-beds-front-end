@@ -1,0 +1,312 @@
+// ======================================= 
+//
+// 			   Global Shit
+//
+// =======================================
+
+
+// ******* Variables *********
+
+// colors
+
+$red:			#B21A20;
+$yellow:		#FFFB57;
+$salmon: 		#FF3E46;
+$Lblue:			#1D8CCC;
+$blue:			#227EB2;
+
+$facebook: 		#3B5998;
+$tumblr: 		#36465D;
+$twitter: 		#00ACED;
+$instagram: 	#517FA4;
+
+// dimensions
+
+$wrap: 			960px;
+
+$desktop:		1100px;
+$desktop-small:	960px;
+
+$tablet:		767px;
+$tablet-small:	600px;
+$phone:			450px;
+
+
+// ******* Mixins *********
+
+@mixin smoothie($dur) {
+	-webkit-transition: all $dur ease-in-out;
+	-moz-transition: all $dur ease-in-out;
+	-o-transition: all $dur ease-in-out;
+	transition: all $dur ease-in-out;
+}
+
+@mixin noSmoothie {
+	-webkit-transition: none;
+	-moz-transition: none;
+	-o-transition: none;
+	transition: none;
+}
+
+@mixin bgRed {
+	background-image: url("../img/bg_red.jpg");
+	background-repeat: repeat;
+	background-position: top left;
+}
+
+@mixin bgYellow {
+	background-image: url("../img/bg_yellow.jpg");
+	background-repeat: repeat;
+	background-position: top left;
+}
+
+@mixin bgBlue {
+	background-image: url("../img/bg_blue.jpg");
+	background-repeat: repeat;
+	background-position: top left;
+}
+
+@mixin bgBlack {
+	background-image: url("../img/bg_black.jpg");
+	background-repeat: repeat;
+	background-position: top left;
+}
+
+@mixin middleThisBitch {
+	top: 50%;
+	position: relative;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+
+// ******* RESET  *********
+
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	box-shadow: none;
+	font-family: "Maven 3", sans-serif;
+}
+
+html, body {
+	height: 100vh;
+	height: 100%;
+	max-height: 1200px;
+}
+
+body {
+	height: calc(100% - 40px);
+	overflow-y: auto;
+	@media screen and (max-width: $tablet){
+		&.noScroll {
+			overflow-y: hidden;
+		}
+	}
+}
+
+h1 {
+	font-family: "Ed 3";
+	width: 100%;
+	font-size: 46px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 15px;
+	color: #202020;
+}
+
+*, *:focus {
+   outline: none;
+}
+
+input::-moz-focus-inner { 
+  border: 0; 
+  outline: 0;
+}
+
+button::-moz-focus-inner { 
+  border: 0; 
+  outline: 0;
+}
+
+select::-moz-focus-inner { 
+  border: 0; 
+  outline: 0;
+}
+
+option::-moz-focus-inner { 
+  border: 0; 
+  outline: 0;
+}
+
+// ******* Global Classes *********
+
+.container {
+	padding: 60px 4%;
+	width: 92%;
+	float: left;
+}
+
+.wrap {
+	width: 100%;
+	max-width: $wrap;
+	margin: 0 auto;
+
+	@media screen and (max-width: $desktop){
+		max-width: $tablet;
+	}
+
+	@media screen and (max-width: $tablet){
+		max-width: $phone;
+	}
+}
+
+.mobileOnly {
+	display: none;
+	@media screen and (max-width: $tablet-small){display: block;}
+}
+
+.desktopOnly {
+	display: block;
+	@media screen and (max-width: $tablet-small){display: none;}
+}
+
+.backToTop{
+	background-image: url("../img/backToTop.png");
+	background-size: 100% auto;
+	background-position: top left;
+	background-repeat: no-repeat;
+	width: 38px;
+	height: 38px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	opacity: 0.4;
+	@include smoothie(0.22s);
+
+	@media screen and (max-width: $tablet){
+		display: none;
+	}
+
+	& span {
+		position: absolute;
+		left: 100px;
+		top: 10px;
+		width: 95px;
+		text-decoration: none;
+		letter-spacing: 0.04em;
+		color: #000000;
+		@include smoothie(0.15s);
+	}
+
+	&:hover {
+		opacity: 1;
+
+		& span {
+			left: -100px;
+		}
+	}
+}
+
+
+
+.blackOut {
+	display: none;
+	position: fixed;
+	width: 92%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.75);
+	z-index: 999999;
+	padding: 0 4%;
+
+	@media screen and (max-width: $tablet-small){
+		width: 100%;
+		padding: 0;
+	}
+
+	& .popWrap {
+		width: 100%;
+		max-width: 550px;
+		margin: 0 auto;
+		background-color: #ffffff;
+		box-sizing: border-box;
+		padding: 40px;
+		box-shadow: 3px 3px 14px #000000;
+		@include middleThisBitch;
+
+		@media screen and (max-width: $tablet-small){
+			max-width: 100%;
+			float: right;
+			height: 100%;
+			right: 0;
+			padding: 0;
+			margin: 0;
+		}
+
+		& .exOut {
+			position: absolute;
+			top: -14px;
+			right: -14px;
+			padding: 6px 12px;
+			background-color: #e8e8e8;
+			border-radius: 25px;
+			box-shadow: 1px 1px 2px #000000;
+			cursor: pointer;
+			@include smoothie(0.15s);
+
+			@media screen and (max-width: $tablet-small){
+				right: 22px;
+				top: 7px;
+			}
+
+			&:hover {
+				box-shadow: 0px 0px 2px #000000;
+				background-color: #ffffff;
+			}
+		}
+
+		& .popContent {
+			height: 100%;
+			width: 100%;
+			overflow-y: auto;
+		}
+	}
+}
+
+.container#hopDown {
+	text-align: center;
+	padding-top: 0;
+	padding-bottom: 0;
+	height: 40px;
+	background-color: #000000;
+	cursor: pointer;
+	opacity: 1;
+	@include smoothie(0.22s);
+
+	&:hover {
+		opacity: 0.95;
+	}
+
+	& img {
+		margin-top: 11px;
+		width: 50px;
+		height: auto;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

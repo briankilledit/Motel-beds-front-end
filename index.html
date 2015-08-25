@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>Motel Beds</title>
+		<link type="text/css" rel="stylesheet" href="assets/css/lightslider.css">
+		<link type="text/css" rel="stylesheet" href="assets/css/main.css">
+		<script type="text/javascript" charset="UTF-8" src="assets/js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" charset="UTF-8" src="assets/js/lightslider.min.js"></script>
+		<script type="text/javascript" charset="UTF-8" src="assets/js/main.js"></script>
+	</head>
+	<body>
+
+		<!-- POP-UP WINDOW -->
+		<div class="blackOut">
+			<div class="popWrap">
+				<span class="exOut">X</span>
+				<div class="popContent"></div>
+			</div>
+		</div>
+
+		<!-- BACK TO TOP LINK -->
+		<a href="#home" class="backToTop"><span>Back to Top<span></a>
+
+
+
+
+
+
+
+
+
+		<!-- =========================================================
+
+								NAVIGATION
+
+		- There's two navigations, the stylesheet decides what shows
+
+		========================================================= -->
+
+		<!-- DESKTOP -->
+		<nav class="container desktop">
+			<div class="wrap">
+				<a class="navItem tour" href="#tour">Tour</a>
+				<a class="navItem music" href="#music">Music</a>
+				<a class="navLogo" href="#home"><img src="assets/img/logo.png"></a>
+				<a class="navItem news" href="#news">News</a>
+				<a class="navItem contact" href="#contact">Contact</a>
+			</div>
+		</nav>
+
+		<!-- MOBILE -->
+		<nav class="container mobile">
+			<div class="left">
+				<a class="mobileLogo" href="#home"><img src="assets/img/logo.png"></a>
+			</div>
+			<div class="right">
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<div class="mainNav">
+				<ul>
+					<li><a class="navItem tour" href="#tour">Tour</a></li>
+					<li><a class="navItem music" href="#music">Music</a></li>
+					<li><a class="navItem news" href="#news">News</a></li>
+					<li><a class="navItem contact" href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+
+
+
+
+
+
+		<!-- ======================================================
+								SLIDESHOW
+		 ======================================================= -->
+		<div class="home" id="home">
+			<ul id="lightSlider">
+
+				<!-- SLIDE WITH TEXT -->
+				<li style="background-image: url('assets/img/motelBedsAlbum0.jpg');">
+					<div class="textContainer">
+						<div class="wrap">
+							<h2>New Album!</h2>
+							<p>We just released this awesome new shit dawg.</p>
+							<a href="#SPECIALLINK" class="cta">Click to listen!</a>
+						</div>
+					</div>
+				</li>
+
+				<li style="background-image: url('assets/img/motelBedsBand3.jpg');"></li>
+				<li style="background-image: url('assets/img/motelBedsBand1.jpg');"></li>
+				<li style="background-image: url('assets/img/motelBedsBand4.jpg');"></li>
+			</ul>
+		</div>
+
+
+		<a href="#tour" class="container" id="hopDown">
+			<img src="assets/img/arrowDown.png">
+		</a>
+
+
+
+
+
+
+		<!-- ======================================================
+								TOUR SECTION
+		 ======================================================= -->
+		<div class="container" id="tour">
+			<div class="wrap">
+				<h1>Tour</h1>
+				<ul>
+
+					<!-- START LOOP ELEMENT -->
+					<li class="listHead">
+						<span class="date">Date</span>
+						<span class="city">City</span>
+						<span class="venue">Venue</span>
+						<span class="tickets">Tickets</span>
+					</li>
+					<!-- END LOOP ELEMENT -->
+
+
+					<li>
+						<span class="date">7/11/2014</span>
+						<span class="city">Yellow Springs, OH</span>
+						<span class="venue">Quonset Hut</span>
+						<span class="tickets">
+							<a href="#">Buy Tickets</a>
+						</span>
+					</li>
+					<li>
+						<span class="date">7/12/2014</span>
+						<span class="city">Cincinnati, OH</span>
+						<span class="venue">MOTR Pub</span>
+						<span class="tickets">
+							<a href="#">Buy Tickets</a>
+						</span>
+					</li>
+					<li>
+						<span class="date">7/25/2014</span>
+						<span class="city">Columbus, OH</span>
+						<span class="venue">Double Happiness</span>
+						<span class="tickets">
+							<a href="#">Buy Tickets</a>
+						</span>
+					</li>
+					<li>
+						<span class="date">7/26/2014</span>
+						<span class="city">Dayton, OH</span>
+						<span class="venue">Blind Bob’s</span>
+						<span class="tickets">
+							<a href="#">Buy Tickets</a>
+						</span>
+					</li>
+					<li>
+						<span class="date">8/15/2014</span>
+						<span class="city">Detroit, MI</span>
+						<span class="venue">New Way Bar</span>
+						<span class="tickets">
+							<a href="#">Buy Tickets</a>
+						</span>
+					</li>
+					<li>
+						<span class="date">8/16/2014</span>
+						<span class="city">Cleveland, OH</span>
+						<span class="venue">Beachland Tavern</span>
+						<span class="tickets">
+							<a href="#">Buy Tickets</a>
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+
+
+
+
+		<!-- ======================================================
+								MUSIC SECTION
+		 ======================================================= -->
+
+		<div class="container" id="music">
+			<div class="wrap">
+				<h1>Music</h1>
+				<p class="subHead desktopOnly">(Click on album to view)</p>
+				<p class="subHead mobileOnly">(Tap on album to view)</p>
+
+
+				<!-- START LOOP ELEMENT -->
+				<div class="album">
+					<div class="cover" style="background-image: url('assets/img/motelBedsAlbum0.jpg');">
+						<div class="albumName">
+							<span>Mind Glitter</span>
+						</div>
+						<img src="assets/img/clearSquare.png">
+					</div>
+					<div class="tracks">
+						<h3>Mind Glitter</h3>
+						<a href="#itunesLink" class="itunesLink" target="_blank">Buy on iTunes</a>
+						<ol>
+							<li>Moondazed</li>
+							<li>Western Son</li>
+							<li>Bat Naps</li>
+							<li>Surfjerk</li>
+							<li>Obey Your Lunch</li>
+							<li>The Lights</li>
+							<li>Chuck Solo</li>
+							<li>Sunfried Dreams</li>
+							<li>Go Go Make Yourself</li>
+							<li>Sombrero Shake</li>
+							<li>Sweet Band</li>
+						</ol>
+					</div>
+				</div>
+				<!-- END LOOP ELEMENT -->
+
+
+				<div class="album">
+					<div class="cover" style="background-image: url('assets/img/motelBedsAlbum1.jpg');">
+						<div class="albumName">
+							<span>Mind Glitter</span>
+						</div>
+						<img src="assets/img/clearSquare.png">
+					</div>
+					<div class="tracks">
+						<h3>Mind Glitter</h3>
+						<a href="#itunesLink" class="itunesLink" target="_blank">Buy on iTunes</a>
+						<ol>
+							<li>Moondazed</li>
+							<li>Western Son</li>
+							<li>Bat Naps</li>
+							<li>Surfjerk</li>
+							<li>Obey Your Lunch</li>
+							<li>The Lights</li>
+							<li>Chuck Solo</li>
+							<li>Sunfried Dreams</li>
+							<li>Go Go Make Yourself</li>
+							<li>Sombrero Shake</li>
+							<li>Sweet Band</li>
+						</ol>
+					</div>
+				</div>
+				<div class="album">
+					<div class="cover" style="background-image: url('assets/img/motelBedsAlbum2.jpg');">
+						<div class="albumName">
+							<span>Mind Glitter</span>
+						</div>
+						<img src="assets/img/clearSquare.png">
+					</div>
+					<div class="tracks">
+						<h3>Mind Glitter</h3>
+						<a href="#itunesLink" class="itunesLink" target="_blank">Buy on iTunes</a>
+						<ol>
+							<li>Moondazed</li>
+							<li>Western Son</li>
+							<li>Bat Naps</li>
+							<li>Surfjerk</li>
+							<li>Obey Your Lunch</li>
+							<li>The Lights</li>
+							<li>Chuck Solo</li>
+							<li>Sunfried Dreams</li>
+							<li>Go Go Make Yourself</li>
+							<li>Sombrero Shake</li>
+							<li>Sweet Band</li>
+						</ol>
+					</div>
+				</div>
+				<div class="album">
+					<div class="cover" style="background-image: url('assets/img/motelBedsAlbum3.jpg');">
+						<div class="albumName">
+							<span>Mind Glitter</span>
+						</div>
+						<img src="assets/img/clearSquare.png">
+					</div>
+					<div class="tracks">
+						<h3>Mind Glitter</h3>
+						<a href="#itunesLink" class="itunesLink" target="_blank">Buy on iTunes</a>
+						<ol>
+							<li>Moondazed</li>
+							<li>Western Son</li>
+							<li>Bat Naps</li>
+							<li>Surfjerk</li>
+							<li>Obey Your Lunch</li>
+							<li>The Lights</li>
+							<li>Chuck Solo</li>
+							<li>Sunfried Dreams</li>
+							<li>Go Go Make Yourself</li>
+							<li>Sombrero Shake</li>
+							<li>Sweet Band</li>
+						</ol>
+					</div>
+				</div>
+				<div class="album">
+					<div class="cover" style="background-image: url('assets/img/motelBedsAlbum4.jpg');">
+						<div class="albumName">
+							<span>Mind Glitter</span>
+						</div>
+						<img src="assets/img/clearSquare.png">
+					</div>
+					<div class="tracks">
+						<h3>Mind Glitter</h3>
+						<a href="#itunesLink" class="itunesLink" target="_blank">Buy on iTunes</a>
+						<ol>
+							<li>Moondazed</li>
+							<li>Western Son</li>
+							<li>Bat Naps</li>
+							<li>Surfjerk</li>
+							<li>Obey Your Lunch</li>
+							<li>The Lights</li>
+							<li>Chuck Solo</li>
+							<li>Sunfried Dreams</li>
+							<li>Go Go Make Yourself</li>
+							<li>Sombrero Shake</li>
+							<li>Sweet Band</li>
+						</ol>
+					</div>
+				</div>
+				<div class="album">
+					<div class="cover" style="background-image: url('assets/img/motelBedsAlbum5.jpg');">
+						<div class="albumName">
+							<span>Mind Glitter</span>
+						</div>
+						<img src="assets/img/clearSquare.png">
+					</div>
+					<div class="tracks">
+						<h3>Mind Glitter</h3>
+						<a href="#itunesLink" class="itunesLink" target="_blank">Buy on iTunes</a>
+						<ol>
+							<li>Moondazed</li>
+							<li>Western Son</li>
+							<li>Bat Naps</li>
+							<li>Surfjerk</li>
+							<li>Obey Your Lunch</li>
+							<li>The Lights</li>
+							<li>Chuck Solo</li>
+							<li>Sunfried Dreams</li>
+							<li>Go Go Make Yourself</li>
+							<li>Sombrero Shake</li>
+							<li>Sweet Band</li>
+						</ol>
+					</div>
+				</div>
+				<div class="album">
+					<div class="cover" style="background-image: url('assets/img/motelBedsAlbum6.jpg');">
+						<div class="albumName">
+							<span>Mind Glitter</span>
+						</div>
+						<img src="assets/img/clearSquare.png">
+					</div>
+					<div class="tracks">
+						<h3>Mind Glitter</h3>
+						<a href="#itunesLink" class="itunesLink" target="_blank">Buy on iTunes</a>
+						<ol>
+							<li>Moondazed</li>
+							<li>Western Son</li>
+							<li>Bat Naps</li>
+							<li>Surfjerk</li>
+							<li>Obey Your Lunch</li>
+							<li>The Lights</li>
+							<li>Chuck Solo</li>
+							<li>Sunfried Dreams</li>
+							<li>Go Go Make Yourself</li>
+							<li>Sombrero Shake</li>
+							<li>Sweet Band</li>
+						</ol>
+					</div>
+				</div>
+				<div class="album">
+					<div class="cover" style="background-image: url('assets/img/motelBedsAlbum7.jpg');">
+						<div class="albumName">
+							<span>Mind Glitter</span>
+						</div>
+						<img src="assets/img/clearSquare.png">
+					</div>
+					<div class="tracks">
+						<h3>Mind Glitter</h3>
+						<a href="#itunesLink" class="itunesLink" target="_blank">Buy on iTunes</a>
+						<ol>
+							<li>Moondazed</li>
+							<li>Western Son</li>
+							<li>Bat Naps</li>
+							<li>Surfjerk</li>
+							<li>Obey Your Lunch</li>
+							<li>The Lights</li>
+							<li>Chuck Solo</li>
+							<li>Sunfried Dreams</li>
+							<li>Go Go Make Yourself</li>
+							<li>Sombrero Shake</li>
+							<li>Sweet Band</li>
+						</ol>
+					</div>
+				</div>
+				<div class="album">
+					<div class="cover" style="background-image: url('assets/img/motelBedsAlbum8.jpg');">
+						<div class="albumName">
+							<span>Mind Glitter</span>
+						</div>
+						<img src="assets/img/clearSquare.png">
+					</div>
+					<div class="tracks">
+						<h3>Mind Glitter</h3>
+						<a href="#itunesLink" class="itunesLink" target="_blank">Buy on iTunes</a>
+						<ol>
+							<li>Moondazed</li>
+							<li>Western Son</li>
+							<li>Bat Naps</li>
+							<li>Surfjerk</li>
+							<li>Obey Your Lunch</li>
+							<li>The Lights</li>
+							<li>Chuck Solo</li>
+							<li>Sunfried Dreams</li>
+							<li>Go Go Make Yourself</li>
+							<li>Sombrero Shake</li>
+							<li>Sweet Band</li>
+						</ol>
+					</div>
+				</div>
+				<div class="album">
+					<div class="cover" style="background-image: url('assets/img/motelBedsAlbum9.jpg');">
+						<div class="albumName">
+							<span>Mind Glitter</span>
+						</div>
+						<img src="assets/img/clearSquare.png">
+					</div>
+					<div class="tracks">
+						<h3>Mind Glitter</h3>
+						<a href="#itunesLink" class="itunesLink" target="_blank">Buy on iTunes</a>
+						<ol>
+							<li>Moondazed</li>
+							<li>Western Son</li>
+							<li>Bat Naps</li>
+							<li>Surfjerk</li>
+							<li>Obey Your Lunch</li>
+							<li>The Lights</li>
+							<li>Chuck Solo</li>
+							<li>Sunfried Dreams</li>
+							<li>Go Go Make Yourself</li>
+							<li>Sombrero Shake</li>
+							<li>Sweet Band</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+		<!-- ======================================================
+								NEWS SECTION
+		 ======================================================= -->
+
+		<div class="container" id="news">
+			<div class="wrap">
+				<h1>News</h1>
+				<p class="subHead desktopOnly">(Click on article to view)</p>
+				<p class="subHead mobileOnly">(Tap on article to view)</p>
+				<ul>
+
+
+					<!-- START LOOP ELEMENT -->
+					<li>
+						<a href="#linkURL" target="_blank">
+							<div class="articleImage" style="background-image: url('assets/img/news.jpg');"></div>
+							<div class="articleWords">
+								<!-- 32 character limit -->
+								<h3>Blah Article Title Blah Article Title Blah</h3>
+								<!-- 110 character limit -->
+								<p>This is a short description short description of the short description of the short description of the short description of theof the fucking sweet ass article...</p>
+							</div>
+						</a>
+					</li>
+					<!-- END LOOP ELEMENT -->
+
+
+					<li>
+						<a href="#linkURL" target="_blank">
+							<div class="articleImage" style="background-image: url('assets/img/news.jpg');"></div>
+							<div class="articleWords">
+								<h3>Blah Article Title Blah</h3>
+								<p>This is a short description of the short description of the fucking sweet ass article...</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#linkURL" target="_blank">
+							<div class="articleImage" style="background-image: url('assets/img/news.jpg');"></div>
+							<div class="articleWords">
+								<h3>Blah Article Title Blah</h3>
+								<p>This is a short description short description of the short description of the of the fucking sweet ass article...</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#linkURL" target="_blank">
+							<div class="articleImage" style="background-image: url('assets/img/news.jpg');"></div>
+							<div class="articleWords">
+								<h3>Blah Article Title Blah</h3>
+								<p>This is a short description of the fucking sweet ass article...</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#linkURL" target="_blank">
+							<div class="articleImage" style="background-image: url('assets/img/news.jpg');"></div>
+							<div class="articleWords">
+								<h3>Blah Article Title Blah</h3>
+								<p>This is a short description of the fucking sweet ass article This is a short description of the fucking sweet ass article This is a short description of the fucking sweet ass article...</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#linkURL" target="_blank">
+							<div class="articleImage" style="background-image: url('assets/img/news.jpg');"></div>
+							<div class="articleWords">
+								<h3>Blah Article Title Blah</h3>
+								<p>This is a short description of the fucking sweet ass article...</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#linkURL" target="_blank">
+							<div class="articleImage" style="background-image: url('assets/img/news.jpg');"></div>
+							<div class="articleWords">
+								<h3>Blah Article Title Blah</h3>
+								<p>This is a short description of the fucking sweet ass article...</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+
+
+
+		<!-- ======================================================
+
+							  CONTACT SECTION
+
+		- Add class "error" for a red border
+		- There's a success message that is set to display: none;
+
+		======================================================= -->
+
+		<div class="container" id="contact">
+			<div class="wrap">
+				<h1>Contact</h1>
+				<div class="successMessage">
+					<h3>Success!</h3>
+					<p>Great work on your message sending skills! We'll get back to you when it's convinient for us... so you might want to get comfortable.</p>
+				</div>
+				<form>
+					<div class="left">
+						<p>Name</p>
+						<input type="text">
+					</div>
+					<div class="right">
+						<p>Email</p>
+						<input type="text">
+					</div>
+					<p>Subject</p>
+					<input type="text">
+					<p>Message</p>
+					<textarea></textarea>
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+
+
+
+
+
+
+		<!-- ======================================================
+							  FOOTER SECTION
+		======================================================= -->
+		<div class="container" id="footer">
+			<div class="wrap">
+				<div class="right">
+					<div class="socMed">
+						<a href="#facebookURL" class="facebook" alt="Motel Beds on Facebook!">Facebook</a>
+						<a href="#twitterURL" class="twitter" alt="Motel Beds on Twitter!">twitter</a>
+						<a href="#tumblrURL" class="tumblr" alt="Motel Beds on Tumblr!">tumblr</a>
+						<a href="#instagramURL" class="instagram" alt="Motel Beds on Instagram!">instagram</a>
+					</div>
+				</div>
+				<div class="left">
+					<p>Motel Beds &copy; 2015 | Site by <a href="http://www.stephensdesigns.com" target="_blank">Brian Stephens</a></p>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</body>
+</html>
